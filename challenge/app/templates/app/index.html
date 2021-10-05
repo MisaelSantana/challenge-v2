@@ -2,7 +2,46 @@
 
 {% block content %}
 
-    <section>
+    <section class="card bg-white">
+
+        <!-- Card - Head - Table for show results -->
+        <div class="result"><hr />Resultado</div>
+
+        <div class="table-response">
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Consumo Medio Total</th>
+                        <th scope="col">Consumo Medio a 40Km/h</th>
+                        <th scope="col">Consumo Medio a 60Km/h</th>
+                        <th scope="col">Consumo Medio a 80Km/h</th>
+                        <th scope="col">Consumo Medio a 100Km/h</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>Otto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <!-- Inputs Form -->
         <div class="container-sm">
@@ -12,7 +51,7 @@
                   <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                 </div>
 
-                <div class="form-floating mb-3 col">
+                <div class="form-floating col">
                   <input type="number" class="form-control" id="floatingPassword" placeholder="text">
                   <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                 </div>
@@ -24,7 +63,7 @@
                       <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                     </div>
 
-                <div class="form-floating mb-3 col">
+                <div class="form-floating col">
                   <input type="number" class="form-control" id="floatingPassword" placeholder="text">
                   <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                 </div>
@@ -36,10 +75,17 @@
                   <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                 </div>
 
-                <div class="form-floating mb-3 col">
+                <div class="form-floating col">
                   <input type="number" class="form-control" id="floatingPassword" placeholder="text">
                   <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center gap-2">
+                <button type="button" class="btn btn-outline-secondary col-3 mb-3">Limpar</button>
+                <button type="button" class="btn btn-outline-success col-3 mb-3">Calcular</button>
             </div>
         </div>
     </section>

@@ -1,9 +1,47 @@
 body {
-	background-image: url(../app/static/app/img/img-background-2OPC.jpg);
+	background-image: url(img/img-background-2OPC.jpg);
 	background-position: center;
 	background-size: cover;
+	width: auto;
+	text-align: center;
+	max-height: 100%;
+	color: black;
 }
 
-	.space-input {
-	/*margin-left: 10px;*/
+.card {
+	margin-top: 10%;
+}
+
+.card hr {
+	color: black;
+}
+
+.result {
+	font-size: 100%;
+	color: black;
+	padding: 2%;
+}
+
+.form-floating {
+	color: gray;
+	padding-left: 10px;
+}
+
+.table-response {
+	margin: 2%;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+/*CSS for text responsive*/
+@media screen and (min-width: 601px) {
+	table {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	table {
+		font-size: 12px;
+	}
 }
