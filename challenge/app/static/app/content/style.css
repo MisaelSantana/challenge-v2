@@ -1,0 +1,9 @@
+body {
+	background-image: url(../app/static/app/img/img-background-2OPC.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+	.space-input {
+	/*margin-left: 10px;*/
+}
