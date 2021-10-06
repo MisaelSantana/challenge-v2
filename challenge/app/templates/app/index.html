@@ -44,52 +44,50 @@
         </div>
 
         <!-- Inputs Form -->
-        <div class="container-sm">
+        <form id="myForm" class="container-sm">
             <div class="row">
                 <div class="form-floating mb-3 col">
-                  <input type="number" class="form-control" id="floatingInput" placeholder="text">
+                  <input type="number" class="form-control" id="inicial" placeholder="text">
                   <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
                 </div>
 
                 <div class="form-floating col">
-                  <input type="number" class="form-control" id="floatingPassword" placeholder="text">
-                  <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
+                  <input type="number" class="form-control" id="destino" placeholder="text">
+                  <label class="space-input" for="floatingInput">Insira o seu destino</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-floating mb-3 col">
-                      <input type="number" class="form-control" id="floatingPassword" placeholder="text">
-                      <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
+                      <input id="km40" type="number" class="form-control" placeholder="text">
+                      <label class="space-input" for="floatingInput">KM percorridos a 40 KM/h</label>
                     </div>
 
                 <div class="form-floating col">
-                  <input type="number" class="form-control" id="floatingPassword" placeholder="text">
-                  <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
+                  <input id="km60" type="number" class="form-control" placeholder="text">
+                  <label class="space-input" for="floatingInput">KM percorridos a 60 KM/h</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-floating mb-3 col">
-                  <input type="number" class="form-control" id="floatingPassword" placeholder="text">
-                  <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
+                  <input id="km80" type="number" class="form-control" placeholder="text">
+                  <label class="space-input" for="floatingInput">KM percorridos a 80 KM/h</label>
                 </div>
 
                 <div class="form-floating col">
-                  <input type="number" class="form-control" id="floatingPassword" placeholder="text">
-                  <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
+                  <input id="km100" type="number" class="form-control" placeholder="text">
+                  <label class="space-input" for="floatingInput">KM percorridos a 100 KM/h</label>
                 </div>
             </div>
-        </div>
+        </form>
 
         <div class="container">
             <div class="row justify-content-center gap-2">
-                <button type="button" class="btn btn-outline-secondary col-3 mb-3">Limpar</button>
+                <button onclick="clearForm()" type="button" class="btn btn-outline-secondary col-3 mb-3">Limpar</button>
                 <button type="button" class="btn btn-outline-success col-3 mb-3">Calcular</button>
             </div>
         </div>
     </section>
-
-    
 
 {% endblock %}
