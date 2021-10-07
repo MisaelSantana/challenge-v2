@@ -4,8 +4,6 @@
 
 
 // Function for clear form;
-
-
 function clearForm() {
     document.getElementById('partida').value=""
     document.getElementById('destino').value=""

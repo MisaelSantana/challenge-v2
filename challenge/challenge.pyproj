@@ -32,6 +32,24 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app\apiData\apiData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\apiData\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\apiTools\formatJsonOutput.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\apiTools\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\apiV1Teste\testes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\apiV1Teste\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -46,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\apiData\" />
+    <Folder Include="app\apiTools\" />
+    <Folder Include="app\apiV1Teste\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />

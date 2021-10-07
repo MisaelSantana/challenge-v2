@@ -4,7 +4,7 @@ Definition of views.
 
 from datetime import datetime
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponseBadRequest, JsonResponse, HttpResponse
 
 def home(request):
     """Renders the home page."""
@@ -43,3 +43,23 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+def apiTeste(request):
+    from app.apiV1Teste.testes import Alive
+    return JsonResponse(Alive().makeAliveObject())
+
+def apiState(request):
+    from app.apiV1Teste.testes import State
+    if request.GET == {}:
+        return HttpResponseBadRequest(State().makeAliveObject(ApplicationStatus = 0, HTTPStatus = 400, errorTitle = 'Erro de Bad Request', errorMessage = {}), content_type='application/json')
+    return HttpResponse(State().makeAliveObject(requestGetData = request.GET), content_type='application/json')
+
+def apiTesteResponse(response):
+    from app.apiV1Teste.testes import AliveResponse
+    if response.GET == {}:
+        return HttpResponse(AliveResponse().AliveResponseObject(), content_type='application/json')
+    return HttpResponse(AliveResponse().AliveResponseObject(requestGetData = request.GET), content_type='application/json')
+
+def apiData(request):
+    from app.apiData.apiData import AliveAPI
+    return JsonResponse(AliveAPI().aliveAPIObject())
