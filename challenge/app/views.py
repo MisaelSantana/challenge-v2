@@ -3,8 +3,10 @@ Definition of views.
 """
 
 from datetime import datetime
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpRequest, HttpResponseBadRequest, JsonResponse, HttpResponse
+from app.models import Data
+from django.db import connection
 
 def home(request):
     """Renders the home page."""
@@ -66,6 +68,10 @@ def apiData(request):
     from app.apiData.apiData import AliveAPI
     return JsonResponse(AliveAPI().aliveAPIObject())
 
-def getApiData(request):
-    from app.apiData.apiData import AliveGetAPIData
-    return JsonResponse(output, safe=False)
+#def getApiDatabase(request):
+#    from app.apiData.apiData import GetAPIDataBase
+#    return JsonResponse(GetAPIDataBase().getAPIObject(), content_type='application/json')
+
+def getApiDatabase(request):
+    from app.apiData.apiData import Data
+    return JsonResponse(Data().Data(content_type='application/json'))
