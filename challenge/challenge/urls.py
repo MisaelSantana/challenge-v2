@@ -30,5 +30,6 @@ urlpatterns = [
     path('Api/v1/teste/', views.apiTeste),
     path('Api/v1/teste/response', views.apiTesteResponse),
     path('Api/v1/State/', views.apiState),
-    path('Api/Data/', views.apiData)
+    path('Api/Data/', views.apiData),
+    path('Api/Data/Database/', views.getApiData),
 ]

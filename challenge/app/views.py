@@ -60,6 +60,12 @@ def apiTesteResponse(response):
         return HttpResponse(AliveResponse().AliveResponseObject(), content_type='application/json')
     return HttpResponse(AliveResponse().AliveResponseObject(requestGetData = request.GET), content_type='application/json')
 
+#Get data for API/Data Base
+
 def apiData(request):
     from app.apiData.apiData import AliveAPI
     return JsonResponse(AliveAPI().aliveAPIObject())
+
+def getApiData(request):
+    from app.apiData.apiData import AliveGetAPIData
+    return JsonResponse(output, safe=False)
