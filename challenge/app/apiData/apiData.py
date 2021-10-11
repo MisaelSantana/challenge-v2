@@ -2,7 +2,6 @@ from app.apiTools.formatJsonOutput import formatJsonOutput
 from app.models import Data
 
 
-
 class AliveAPI():
     """Class for validate if API be UP"""
 
@@ -10,6 +9,7 @@ class AliveAPI():
         return {"Alive": 1, "HTTPStatus": 200, "Error": {"errorTitle": None, "errorMessage": None}}
 
     def getAllData(self):
-        for i in Data.objects.all():
-            pass
-            
+        listValues = []
+        for i in Data.objects.values().all():
+            listValues.append(i)
+        return {"valuesList": listValues}

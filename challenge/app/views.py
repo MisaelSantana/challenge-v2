@@ -68,6 +68,5 @@ def apiData(request):
 
 def getAllDataAPi(request):
     from app.apiData.apiData import AliveAPI
-    return HttpResponse(AliveAPI().getAllData(), content_type='application/json')
     return JsonResponse(AliveAPI().getAllData())
     
