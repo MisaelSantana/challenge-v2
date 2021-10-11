@@ -1,5 +1,5 @@
 from app.apiTools.formatJsonOutput import formatJsonOutput
-from app.models import data
+from app.models import Data
 
 
 
@@ -9,3 +9,7 @@ class AliveAPI():
     def aliveAPIObject(self):
         return {"Alive": 1, "HTTPStatus": 200, "Error": {"errorTitle": None, "errorMessage": None}}
 
+    def getAllData(self):
+        for i in Data.objects.all():
+            pass
+            

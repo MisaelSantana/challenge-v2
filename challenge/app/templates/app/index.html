@@ -4,11 +4,12 @@
 
     <section class="card bg-white">
 
-        <!-- Card - Head - Table for show results -->
-        <div class="result"><hr />Resultado</div>
+        <!-- Card - Body-->
+        <div class="result car-title"><hr />Resultado</div>
 
+        <!-- Table -->
         <div class="table-response">
-            <table class="table table-dark table-striped">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Consumo Medio Total</th>
@@ -47,8 +48,8 @@
         <form id="myForm" class="container-sm">
             <div class="row">
                 <div class="form-floating mb-3 col">
-                  <input type="number" class="form-control" id="partida" placeholder="text">
-                  <label class="space-input" for="floatingInput">Insira a localizacao inicial</label>
+                  <input type="number" class="form-control" id="partida" placeholder="text" disabled>
+                  <label class="space-input" for="floatingInput">Localizacao inicial - Padrao (0 KM)</label>
                 </div>
 
                 <div class="form-floating col">
@@ -82,6 +83,7 @@
             </div>
         </form>
 
+        <!-- Buttons Form -->
         <div class="container">
             <div class="row justify-content-center gap-2">
                 <button onclick="clearForm()" type="button" class="btn btn-outline-secondary col-3 mb-3">Limpar</button>
