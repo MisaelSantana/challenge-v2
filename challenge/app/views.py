@@ -5,7 +5,7 @@ Definition of views.
 from datetime import datetime
 from django.shortcuts import render, redirect
 from django.http import HttpRequest, HttpResponseBadRequest, JsonResponse, HttpResponse
-from app.models import Data
+from app.models import data
 from django.db import connection
 
 def home(request):
@@ -68,10 +68,6 @@ def apiData(request):
     from app.apiData.apiData import AliveAPI
     return JsonResponse(AliveAPI().aliveAPIObject())
 
-#def getApiDatabase(request):
-#    from app.apiData.apiData import GetAPIDataBase
-#    return JsonResponse(GetAPIDataBase().getAPIObject(), content_type='application/json')
-
 def getApiDatabase(request):
-    from app.apiData.apiData import Data
+    from app.apiData.apiData import data
     return JsonResponse(Data().Data(content_type='application/json'))
