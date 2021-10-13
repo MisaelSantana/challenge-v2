@@ -24,5 +24,5 @@ class Location(models.Model):
     ID_LOCALIZACAO = models.IntegerField()
     PT_PARTIDA = models.CharField(max_length=10)
     PT_CHEGADA = models.CharField(max_length=10)
-    CREATED_ATT = models.DateField(editable=False, blank=True, null=True)
-    UPDATED = models.DateField(editable=False, blank=True, null=True)
+    CREATED_ATT = models.IntegerField()
+    UPDATED = models.IntegerField()
