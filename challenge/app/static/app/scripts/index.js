@@ -1,6 +1,3 @@
-// Functions JavaScript;
-
-
 // Call function python for get inputs and push for backend
 //$.ajax({
 //    type: "POST",
@@ -9,6 +6,15 @@
 //}).done(function (o) {
 //    return data
 //})
+
+$.ajax({
+    type: "POST",
+    url: "~/apiData.py",
+    data: { "destino": destino },
+    success: function (response) {
+        alert(response);
+    }
+});
 
 // Function for clear form;
 function clearForm() {
@@ -20,7 +26,7 @@ function clearForm() {
         document.getElementById('km80').value = "";
         document.getElementById('km100').value = "";
     }
-}
+};
 
 // Function for push data end calculate;
 function calculated() {
@@ -33,4 +39,4 @@ function calculated() {
         document.getElementById('km80').value = "";
         document.getElementById('km100').value = "";
     }
-}
+};
