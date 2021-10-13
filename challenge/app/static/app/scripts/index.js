@@ -1,5 +1,15 @@
 // Functions JavaScript;
 
+
+// Call function python for get inputs and push for backend
+//$.ajax({
+//    type: "POST",
+//    url: "~/apiData.py",
+//    data: { "returnObject": destino}
+//}).done(function (o) {
+//    return data
+//})
+
 // Function for clear form;
 function clearForm() {
     with (document) {

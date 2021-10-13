@@ -70,3 +70,6 @@ def getAllDataAPi(request):
     from app.apiData.apiData import AliveAPI
     return JsonResponse(AliveAPI().getAllData())
     
+def calculate(request):
+    from app.apiData.apiData import AliveAPI
+    return JsonResponse(AliveAPI().consumptionCalculate(request.POST))

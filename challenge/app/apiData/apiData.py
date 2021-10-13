@@ -13,3 +13,16 @@ class AliveAPI():
         for i in Data.objects.values().all():
             listValues.append(i)
         return {"valuesList": listValues}
+
+    def consumptionCalculate(self, obj = {}):
+        """Function for calculated consumption"""
+        returnObject = {}
+        returnObject['destino'] = (str(obj['destino']))
+        returnObject['km40'] = (float(obj['km40']) / 9)
+        returnObject['km60'] = (float(obj['km60']) / 12)
+        returnObject['km80'] = (float(obj['km80']) / 14)
+        returnObject['km100'] = (float(obj['km100']) / 16)
+        return returnObject
+
+    def saveData(self):
+        """Function for save Data inputs"""

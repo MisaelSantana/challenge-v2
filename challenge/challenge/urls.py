@@ -32,4 +32,5 @@ urlpatterns = [
     path('Api/v1/State/', views.apiState),
     path('Api/Data/', views.apiData),
     path('Api/Data/Database/', views.getAllDataAPi),
+    path('Api/Data/Calculate/', views.calculate),
 ]

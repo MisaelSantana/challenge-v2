@@ -4,9 +4,6 @@
 
     <section class="card bg-white">
 
-        <!-- Card - Body-->
-        <div class="result car-title"><hr />Resultado</div>
-
         <!-- Table -->
         <div class="table-response">
             <table class="table table-striped">
@@ -48,36 +45,36 @@
         <form id="myForm" class="container-sm">
             <div class="row">
                 <div class="form-floating mb-3 col">
-                  <input type="number" class="form-control" id="partida" placeholder="text" disabled>
-                  <label class="space-input" for="floatingInput">Localizacao inicial - Padrao (0 KM)</label>
+                  <input id="partida" type="text"class="form-control" placeholder="text">
+                  <label class="space-input" for="floatingInput">Local de Partida</label>
                 </div>
 
                 <div class="form-floating col">
-                  <input type="number" class="form-control" id="destino" placeholder="text">
-                  <label class="space-input" for="floatingInput">Insira o seu destino</label>
+                  <input id="destino" type="text"class="form-control" placeholder="text">
+                  <label class="space-input" for="floatingInput">Local de destino</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-floating mb-3 col">
-                      <input id="km40" type="number" class="form-control" placeholder="text">
+                      <input id="km40" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" class="form-control" placeholder="text" min="0">
                       <label class="space-input" for="floatingInput">KM percorridos a 40 KM/h</label>
                     </div>
 
                 <div class="form-floating col">
-                  <input id="km60" type="number" class="form-control" placeholder="text">
+                  <input id="km60" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" class="form-control" placeholder="text" min="0">
                   <label class="space-input" for="floatingInput">KM percorridos a 60 KM/h</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-floating mb-3 col">
-                  <input id="km80" type="number" class="form-control" placeholder="text">
+                  <input id="km80" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" class="form-control" placeholder="text" min="0">
                   <label class="space-input" for="floatingInput">KM percorridos a 80 KM/h</label>
                 </div>
 
                 <div class="form-floating col">
-                  <input id="km100" type="number" class="form-control" placeholder="text">
+                  <input id="km100" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" class="form-control" placeholder="text" min="0" />
                   <label class="space-input" for="floatingInput">KM percorridos a 100 KM/h</label>
                 </div>
             </div>

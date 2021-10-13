@@ -12,16 +12,6 @@ body {
 	margin-top: 10%;
 }
 
-.card hr {
-	color: black;
-}
-
-.result {
-	font-size: 100%;
-	color: black;
-	padding: 2%;
-}
-
 .form-floating {
 	color: gray;
 	padding-left: 10px;

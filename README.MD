@@ -6,14 +6,17 @@ A Aplicação será uma calculadora de consumo de combustível, onde o usuário 
 e a aplicação indica o consumo médio do veículo, utilizando as médias de consumo posteriormente descritas.
 Importante atender os demais requisitos mínimos estabelecidos ainda abaixo.
 
--> Input Local de partida Local de destino Quilômetros percorridos com a velocidade média de 40Km/h
+-> Input Local de partida Local de destino
+	-> Quilômetros percorridos com a velocidade média de 40Km/h
 	-> Quilômetros percorridos com a velocidade média de 60Km/h
 	-> Quilômetros percorridos com a velocidade média de 80Km/h
 	-> Quilômetros percorridos com a velocidade média de 100Km/h
 
 -> Output
-	-> Consumo médio total Consumo médio à 40Km/h
-	-> Consumo médio à 60Km/h Consumo médio à 80Km/h
+	-> Consumo médio total
+	-> Consumo médio à 40Km/h
+	-> Consumo médio à 60Km/h
+	-> Consumo médio à 80Km/h
 	-> Consumo médio à 100Km/h
 
 -> Parâmetros padrões 
