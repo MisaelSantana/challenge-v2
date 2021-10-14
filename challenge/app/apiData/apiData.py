@@ -17,6 +17,7 @@ class AliveAPI():
     def consumptionCalculate(self, obj = {}):
         """Function for calculated consumption"""
         returnObject = {}
+        returnObject['partida'] = (str(obj['partida']))
         returnObject['destino'] = (str(obj['destino']))
         returnObject['km40'] = (float(obj['km40']) / 9)
         returnObject['km60'] = (float(obj['km60']) / 12)
